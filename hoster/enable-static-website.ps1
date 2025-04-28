@@ -15,5 +15,5 @@ Set-Content $tempErrorDocument404File $env:ErrorDocument404Contents -Force
 Set-AzStorageBlobContent -Context $ctx -Container '$web' -File $tempErrorDocument404File -Blob $env:ErrorDocument404Path -Properties @{'ContentType' = 'text/html'} -Force
 
 # Upoload site to storage account
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/mmaraa/taitaja2024/main/hoster/temp_site.zip" -OutFile "temp_site.zip"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/mikavilpo/taitaja2025-204/main/hoster/temp_site.zip" -OutFile "temp_site.zip"
 Set-AzStorageBlobContent -Context $ctx -Container '$web' -File "temp_site.zip" -Blob "temp_site.zip" -Properties @{'ContentType' = 'application/x-zip-compressed'} -Force

@@ -14,7 +14,7 @@ param deplLocation string = 'swedencentral'
 @description('Tags used for all resources')
 param tags object = {
   competitionName: competitionName
-  sourceRepository: 'https://github.com/mmaraa/taitaja2024'
+  sourceRepository: 'https://github.com/mikavilpo/taitaja2025-204'
 }
 
 // VARIABLES

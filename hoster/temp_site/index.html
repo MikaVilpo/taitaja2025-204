@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>taitaja.online</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  .bubble-graphics {
+    background: url('pic.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Full height of the viewport */
+  }
+  .maintenance-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width as needed */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    border-radius: 15px; /* Optional: adds rounded corners to the background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  @media (max-width: 768px) {
+    .bubble-graphics {
+      height: 50vh; /* Adjust height for smaller devices */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="bubble-graphics"></div>
+<div class="maintenance-message">
+  <h1>Lanseeraamme uuden palvelun pian!</h1>
+  <p>Palaa sivustolle myöhemmin uudelleen.</p>
+  <hr>
+  <h1>We are launching our service shortly!</h1>
+  <p>Please revisit the site later.</p>
+</div>
+<footer>
+  <p>www.taitaja.online</p>
+</footer>
+</body>
+</html>
